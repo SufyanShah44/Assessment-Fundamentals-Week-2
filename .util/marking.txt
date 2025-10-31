@@ -1,19 +1,20 @@
 ============================= test session starts ==============================
-platform linux -- Python 3.12.12, pytest-8.4.2, pluggy-1.6.0
+platform linux -- Python 3.14.0, pytest-8.4.2, pluggy-1.6.0
 rootdir: /home/runner/work/Assessment-Fundamentals-Week-2/Assessment-Fundamentals-Week-2
-collected 0 items / 3 errors
+collected 24 items
 
-!!!!!!!!!!!!!!!!!!! Interrupted: 3 errors during collection !!!!!!!!!!!!!!!!!!!!
-============================== 3 errors in 0.09s ===============================
+Level-1/test_one_task.py .........                                       [ 37%]
+Level-2/test_two_task.py .......                                         [ 66%]
+Level-3/test_three_task.py .....F..                                      [100%]
+
+========================= 1 failed, 23 passed in 0.04s =========================
 ************* Module task_one
-Level-1/task_one.py:18:41: E0601: Using variable 'Assessment' before assignment (used-before-assignment)
 Level-1/task_one.py:24:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
 Level-1/task_one.py:32:34: W0622: Redefining built-in 'type' (redefined-builtin)
 Level-1/task_one.py:30:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 ************* Module task_two
 Level-2/task_two.py:53:0: C0303: Trailing whitespace (trailing-whitespace)
 Level-2/task_two.py:74:0: C0325: Unnecessary parens after 'return' keyword (superfluous-parens)
-Level-2/task_two.py:18:41: E0601: Using variable 'Assessment' before assignment (used-before-assignment)
 Level-2/task_two.py:24:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
 Level-2/task_two.py:30:37: W0622: Redefining built-in 'type' (redefined-builtin)
 Level-2/task_two.py:41:34: W0622: Redefining built-in 'type' (redefined-builtin)
@@ -28,7 +29,6 @@ Level-2/task_two.py:69:0: C0115: Missing class docstring (missing-class-docstrin
 Level-2/task_two.py:73:4: C0116: Missing function or method docstring (missing-function-docstring)
 Level-2/task_two.py:69:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 ************* Module task_three
-Level-3/task_three.py:18:41: E0601: Using variable 'Assessment' before assignment (used-before-assignment)
 Level-3/task_three.py:24:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
 Level-3/task_three.py:30:37: W0622: Redefining built-in 'type' (redefined-builtin)
 Level-3/task_three.py:41:34: W0622: Redefining built-in 'type' (redefined-builtin)
@@ -48,5 +48,5 @@ Level-3/task_three.py:118:8: R1705: Unnecessary "elif" after "return", remove th
 Level-3/task_three.py:123:19: E1120: No value for argument 'score' in constructor call (no-value-for-parameter)
 
 ------------------------------------------------------------------
-Your code has been rated at 7.08/10 (previous run: 7.08/10, +0.00)
+Your code has been rated at 7.89/10 (previous run: 7.89/10, +0.00)
 
