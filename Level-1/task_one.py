@@ -1,5 +1,24 @@
 from datetime import date
 
+class Trainee():
+    def __init__(self, name: str, email: str, date_of_birth: date, assessments: list):
+        self.name = name
+        self.email = email
+        self.date_of_birth = date_of_birth
+        self.assessments = assessments
+        assessments = []
+    
+    def get_age(self) -> int:
+        if date.now().month > self.date_of_birth.month():
+            return (date.now().year() - self.date_of_birth.year()) + 1
+        return date.now().year() - self.date_of_birth.year()
+    
+
+
+
+
+
+
 
 
 if __name__ == "__main__":
