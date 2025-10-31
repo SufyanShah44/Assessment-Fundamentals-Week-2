@@ -4,9 +4,7 @@ rootdir: /home/runner/work/Assessment-Fundamentals-Week-2/Assessment-Fundamental
 collected 0 items / 3 errors
 
 !!!!!!!!!!!!!!!!!!! Interrupted: 3 errors during collection !!!!!!!!!!!!!!!!!!!!
-============================== 3 errors in 0.15s ===============================
-************* Module task_three
-Level-3/task_three.py:115:0: E0001: Parsing failed: 'expected an indented block after function definition on line 112 (task_three, line 115)' (syntax-error)
+============================== 3 errors in 0.09s ===============================
 ************* Module task_one
 Level-1/task_one.py:18:41: E0601: Using variable 'Assessment' before assignment (used-before-assignment)
 Level-1/task_one.py:24:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
@@ -29,7 +27,26 @@ Level-2/task_two.py:62:0: R0903: Too few public methods (1/2) (too-few-public-me
 Level-2/task_two.py:69:0: C0115: Missing class docstring (missing-class-docstring)
 Level-2/task_two.py:73:4: C0116: Missing function or method docstring (missing-function-docstring)
 Level-2/task_two.py:69:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+************* Module task_three
+Level-3/task_three.py:18:41: E0601: Using variable 'Assessment' before assignment (used-before-assignment)
+Level-3/task_three.py:24:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+Level-3/task_three.py:30:37: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:41:34: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:39:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:60:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:55:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:69:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:64:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:78:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:73:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:82:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:92:23: W0621: Redefining name 'questions' from outer scope (line 128) (redefined-outer-name)
+Level-3/task_three.py:92:51: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:90:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:100:23: W0621: Redefining name 'quiz' from outer scope (line 135) (redefined-outer-name)
+Level-3/task_three.py:118:8: R1705: Unnecessary "elif" after "return", remove the leading "el" from "elif" (no-else-return)
+Level-3/task_three.py:123:19: E1120: No value for argument 'score' in constructor call (no-value-for-parameter)
 
 ------------------------------------------------------------------
-Your code has been rated at 6.80/10 (previous run: 6.80/10, +0.00)
+Your code has been rated at 7.08/10 (previous run: 7.08/10, +0.00)
 
