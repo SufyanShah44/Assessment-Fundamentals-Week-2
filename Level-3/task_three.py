@@ -96,8 +96,21 @@ class Quiz:
 class Marking:
 
     def __init__(self, quiz: Quiz) -> None:
-        pass
+        self._quiz = quiz
+    
+    def mark(self) -> int: 
+        total_score = 0
+        for question in self._quiz.questions: 
+            if question.chosen_answer == question.correct_answer:
+                total_score += 1
 
+        
+        calculated_percentage = (total_score/len(self._quiz.questions)) * 100
+        return int(calculated_percentage)
+
+
+    def generate_assessment(self) -> Assessment: 
+        
 
 if __name__ == "__main__":
     # Example questions and quiz
