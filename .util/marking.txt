@@ -1,26 +1,15 @@
 ============================= test session starts ==============================
 platform linux -- Python 3.12.12, pytest-8.4.2, pluggy-1.6.0
 rootdir: /home/runner/work/Assessment-Fundamentals-Week-2/Assessment-Fundamentals-Week-2
-collected 9 items / 2 errors
+collected 0 items / 3 errors
 
-!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
-============================== 2 errors in 0.11s ===============================
+!!!!!!!!!!!!!!!!!!! Interrupted: 3 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 3 errors in 0.10s ===============================
 ************* Module task_one
-Level-1/task_one.py:10:0: C0303: Trailing whitespace (trailing-whitespace)
-Level-1/task_one.py:16:0: C0303: Trailing whitespace (trailing-whitespace)
-Level-1/task_one.py:17:0: C0303: Trailing whitespace (trailing-whitespace)
-Level-1/task_one.py:24:0: C0303: Trailing whitespace (trailing-whitespace)
-Level-1/task_one.py:1:0: C0114: Missing module docstring (missing-module-docstring)
-Level-1/task_one.py:3:0: R0903: Too few public methods (1/2) (too-few-public-methods)
-Level-1/task_one.py:18:0: C0115: Missing class docstring (missing-class-docstring)
-Level-1/task_one.py:19:34: W0622: Redefining built-in 'type' (redefined-builtin)
-Level-1/task_one.py:18:0: R0903: Too few public methods (0/2) (too-few-public-methods)
-Level-1/task_one.py:31:4: E1101: Instance of 'Trainee' has no 'add_assessment' member (no-member)
-Level-1/task_one.py:33:4: E1101: Instance of 'Trainee' has no 'add_assessment' member (no-member)
-Level-1/task_one.py:35:4: E1101: Instance of 'Trainee' has no 'add_assessment' member (no-member)
-Level-1/task_one.py:36:10: E1101: Instance of 'Trainee' has no 'get_assessment' member (no-member)
-Level-1/task_one.py:37:10: E1101: Instance of 'Trainee' has no 'get_assessment' member (no-member)
-Level-1/task_one.py:38:10: E1101: Instance of 'Trainee' has no 'get_assessment' member (no-member)
+Level-1/task_one.py:18:41: E0601: Using variable 'Assessment' before assignment (used-before-assignment)
+Level-1/task_one.py:24:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+Level-1/task_one.py:32:34: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-1/task_one.py:30:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 ************* Module task_two
 Level-2/task_two.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 Level-2/task_two.py:19:14: E0602: Undefined variable 'Trainee' (undefined-variable)
@@ -40,5 +29,5 @@ Level-3/task_three.py:35:23: W0621: Redefining name 'quiz' from outer scope (lin
 Level-3/task_three.py:33:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 
 ------------------------------------------------------------------
-Your code has been rated at 0.00/10 (previous run: 0.00/10, +0.00)
+Your code has been rated at 4.26/10 (previous run: 4.26/10, +0.00)
 
