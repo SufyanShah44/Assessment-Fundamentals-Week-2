@@ -13,6 +13,10 @@ class Trainee():
             return (date.now().year() - self.date_of_birth.year()) + 1
         return date.now().year() - self.date_of_birth.year()
     
+class Assessment:
+    def __init__(self):
+        pass
+    
 
 
 
