@@ -1,5 +1,5 @@
 ============================= test session starts ==============================
-platform linux -- Python 3.12.12, pytest-8.4.2, pluggy-1.6.0
+platform linux -- Python 3.12.11, pytest-8.4.2, pluggy-1.6.0
 rootdir: /home/runner/work/Assessment-Fundamentals-Week-2/Assessment-Fundamentals-Week-2
 collected 0 items / 3 errors
 
@@ -28,17 +28,32 @@ Level-2/task_two.py:69:0: C0115: Missing class docstring (missing-class-docstrin
 Level-2/task_two.py:73:4: C0116: Missing function or method docstring (missing-function-docstring)
 Level-2/task_two.py:69:0: R0903: Too few public methods (1/2) (too-few-public-methods)
 ************* Module task_three
+Level-3/task_three.py:77:0: C0325: Unnecessary parens after 'return' keyword (superfluous-parens)
 Level-3/task_three.py:1:0: C0114: Missing module docstring (missing-module-docstring)
-Level-3/task_three.py:17:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:17:0: R0903: Too few public methods (0/2) (too-few-public-methods)
-Level-3/task_three.py:25:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:27:23: W0621: Redefining name 'questions' from outer scope (line 41) (redefined-outer-name)
-Level-3/task_three.py:27:51: W0622: Redefining built-in 'type' (redefined-builtin)
-Level-3/task_three.py:25:0: R0903: Too few public methods (0/2) (too-few-public-methods)
-Level-3/task_three.py:33:0: C0115: Missing class docstring (missing-class-docstring)
-Level-3/task_three.py:35:23: W0621: Redefining name 'quiz' from outer scope (line 48) (redefined-outer-name)
-Level-3/task_three.py:33:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:18:41: E0601: Using variable 'Assessment' before assignment (used-before-assignment)
+Level-3/task_three.py:24:4: R1710: Either all return statements in a function should return an expression, or none of them should. (inconsistent-return-statements)
+Level-3/task_three.py:30:37: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:42:34: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:39:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:56:0: C0115: Missing class docstring (missing-class-docstring)
+Level-3/task_three.py:60:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:56:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:64:0: C0115: Missing class docstring (missing-class-docstring)
+Level-3/task_three.py:68:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:64:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:72:0: C0115: Missing class docstring (missing-class-docstring)
+Level-3/task_three.py:76:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-3/task_three.py:72:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-3/task_three.py:80:0: C0115: Missing class docstring (missing-class-docstring)
+Level-3/task_three.py:80:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:88:0: C0115: Missing class docstring (missing-class-docstring)
+Level-3/task_three.py:90:23: W0621: Redefining name 'questions' from outer scope (line 104) (redefined-outer-name)
+Level-3/task_three.py:90:51: W0622: Redefining built-in 'type' (redefined-builtin)
+Level-3/task_three.py:88:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-3/task_three.py:96:0: C0115: Missing class docstring (missing-class-docstring)
+Level-3/task_three.py:98:23: W0621: Redefining name 'quiz' from outer scope (line 111) (redefined-outer-name)
+Level-3/task_three.py:96:0: R0903: Too few public methods (0/2) (too-few-public-methods)
 
 ------------------------------------------------------------------
-Your code has been rated at 6.81/10 (previous run: 6.81/10, +0.00)
+Your code has been rated at 6.67/10 (previous run: 6.67/10, +0.00)
 
