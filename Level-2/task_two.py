@@ -1,3 +1,4 @@
+'''Here the Trainee and Assessment Class are initialised'''
 from datetime import date
 
 class Trainee():
@@ -25,11 +26,12 @@ class Trainee():
         for assessments in self.assessments:
             if assessments.name == name:
                 return assessments
-    
+
     def get_assessment_of_type(self, type: str) -> list[Assessment]:
+        '''Returns if assessments based on provided type of assessment'''
         assessments_list = []
         for assessments in self.assessments:
-            if type == assessments.type: 
+            if type == assessments.type:
                 assessments_list.append(assessments)
         return assessments_list
 
@@ -48,14 +50,14 @@ class Assessment:
             raise ValueError("Score needs to be 100 or less!")
         if score < 0:
             raise ValueError("Score needs to be less than zero!")
-        
+  
 
 class MultipleChoiceAssessment(Assessment):
     def __init__(self, name: str, score: float):
         super().__init__(name, "multiple-choice", score)
-    
+
     def calculate_score(self):
-        return self.score * 0.7 
+        return self.score * 0.7
 
 class TechnicalAssessment(Assessment):
     def __init__(self, name: str, score: float):
@@ -67,11 +69,11 @@ class TechnicalAssessment(Assessment):
 class PresentationAssessment(Assessment):
     def __init__(self, name: str, score: float):
         super().__init__(name, "presentation", score)
-    
+
     def calculate_score(self):
-        return (self.score * 0.6) 
-        
-        
+        return (self.score * 0.6)
+
+
 if __name__ == "__main__":
     trainee = Trainee("Sigma", "trainee@sigmalabs.co.uk", date(1990, 1, 1))
     print(trainee)
