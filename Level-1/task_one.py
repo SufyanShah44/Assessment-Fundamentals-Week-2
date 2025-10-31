@@ -1,28 +1,27 @@
 from datetime import date
 
 class Trainee():
-    def __init__(self, name: str, email: str, date_of_birth: date, assessments: list):
+    '''Trainee Class that '''
+    def __init__(self, name: str, email: str, date_of_birth: date):
         self.name = name
         self.email = email
         self.date_of_birth = date_of_birth
-        self.assessments = assessments
-        assessments = []
+        self.assessments = []
     
     def get_age(self) -> int:
-        if date.now().month > self.date_of_birth.month():
-            return (date.now().year() - self.date_of_birth.year()) + 1
-        return date.now().year() - self.date_of_birth.year()
+        '''Returns the age of the trainee in years'''
+        if date.today().month > self.date_of_birth.month:
+            return date.today().year - self.date_of_birth.year + 1
+        return date.today().year - self.date_of_birth.year
+    
     
 class Assessment:
-    def __init__(self):
-        pass
+    def __init__(self, name: str, type: str, score: float):
+        self.name = name
+        self.type = type
+        self.score = score
+
     
-
-
-
-
-
-
 
 
 if __name__ == "__main__":
