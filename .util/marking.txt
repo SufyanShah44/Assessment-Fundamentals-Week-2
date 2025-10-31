@@ -1,16 +1,33 @@
 ============================= test session starts ==============================
-platform linux -- Python 3.12.12, pytest-8.4.2, pluggy-1.6.0
+platform linux -- Python 3.12.11, pytest-8.4.2, pluggy-1.6.0
 rootdir: /home/runner/work/Assessment-Fundamentals-Week-2/Assessment-Fundamentals-Week-2
-collected 0 items / 3 errors
+collected 9 items / 2 errors
 
-!!!!!!!!!!!!!!!!!!! Interrupted: 3 errors during collection !!!!!!!!!!!!!!!!!!!!
-============================== 3 errors in 0.11s ===============================
+!!!!!!!!!!!!!!!!!!! Interrupted: 2 errors during collection !!!!!!!!!!!!!!!!!!!!
+============================== 2 errors in 0.10s ===============================
 ************* Module task_one
+Level-1/task_one.py:10:0: C0303: Trailing whitespace (trailing-whitespace)
+Level-1/task_one.py:15:0: C0303: Trailing whitespace (trailing-whitespace)
+Level-1/task_one.py:19:0: C0303: Trailing whitespace (trailing-whitespace)
 Level-1/task_one.py:1:0: C0114: Missing module docstring (missing-module-docstring)
-Level-1/task_one.py:6:14: E0602: Undefined variable 'Trainee' (undefined-variable)
-Level-1/task_one.py:9:27: E0602: Undefined variable 'Assessment' (undefined-variable)
-Level-1/task_one.py:11:27: E0602: Undefined variable 'Assessment' (undefined-variable)
-Level-1/task_one.py:13:27: E0602: Undefined variable 'Assessment' (undefined-variable)
+Level-1/task_one.py:3:0: C0115: Missing class docstring (missing-class-docstring)
+Level-1/task_one.py:11:4: C0116: Missing function or method docstring (missing-function-docstring)
+Level-1/task_one.py:12:11: E1101: Class 'date' has no 'now' member (no-member)
+Level-1/task_one.py:13:20: E1101: Class 'date' has no 'now' member (no-member)
+Level-1/task_one.py:14:15: E1101: Class 'date' has no 'now' member (no-member)
+Level-1/task_one.py:3:0: R0903: Too few public methods (1/2) (too-few-public-methods)
+Level-1/task_one.py:16:0: C0115: Missing class docstring (missing-class-docstring)
+Level-1/task_one.py:16:0: R0903: Too few public methods (0/2) (too-few-public-methods)
+Level-1/task_one.py:29:14: E1120: No value for argument 'assessments' in constructor call (no-value-for-parameter)
+Level-1/task_one.py:32:4: E1101: Instance of 'Trainee' has no 'add_assessment' member (no-member)
+Level-1/task_one.py:32:27: E1121: Too many positional arguments for constructor call (too-many-function-args)
+Level-1/task_one.py:34:4: E1101: Instance of 'Trainee' has no 'add_assessment' member (no-member)
+Level-1/task_one.py:34:27: E1121: Too many positional arguments for constructor call (too-many-function-args)
+Level-1/task_one.py:36:4: E1101: Instance of 'Trainee' has no 'add_assessment' member (no-member)
+Level-1/task_one.py:36:27: E1121: Too many positional arguments for constructor call (too-many-function-args)
+Level-1/task_one.py:37:10: E1101: Instance of 'Trainee' has no 'get_assessment' member (no-member)
+Level-1/task_one.py:38:10: E1101: Instance of 'Trainee' has no 'get_assessment' member (no-member)
+Level-1/task_one.py:39:10: E1101: Instance of 'Trainee' has no 'get_assessment' member (no-member)
 ************* Module task_two
 Level-2/task_two.py:1:0: C0114: Missing module docstring (missing-module-docstring)
 Level-2/task_two.py:19:14: E0602: Undefined variable 'Trainee' (undefined-variable)
