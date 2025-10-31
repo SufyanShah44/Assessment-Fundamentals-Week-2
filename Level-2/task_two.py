@@ -1,18 +1,73 @@
 from datetime import date
 
+class Trainee():
+    '''Trainee Class'''
 
-#####
-#
-# COPY YOUR CODE FROM LEVEL 1 BELOW
-#
-#####
+    def __init__(self, name: str, email: str, date_of_birth: date):
+        self.name = name
+        self.email = email
+        self.date_of_birth = date_of_birth
+        self.assessments = []
+
+    def get_age(self) -> int:
+        '''Returns the age of the trainee in years'''
+        if date.today().month > self.date_of_birth.month:
+            return date.today().year - self.date_of_birth.year + 1
+        return date.today().year - self.date_of_birth.year
+
+    def add_assessment(self, assessment: Assessment) -> None:
+        '''Adds the assessment to our assessment list'''
+        if not isinstance(assessment, Assessment):
+            raise ValueError("Please enter a valid assessment class!")
+        self.assessments.append(assessment)
+
+    def get_assessment(self, name: str) -> Assessment:
+        ''' Returns assessments class if found in list'''
+        for assessments in self.assessments:
+            if assessments.name == name:
+                return assessments
 
 
-#####
-#
-# COPY YOUR CODE FROM LEVEL 1 ABOVE
-#
-#####
+class Assessment:
+    '''Assessment Class'''
+    def __init__(self, name: str, type: str, score: float):
+        self.name = name
+        self.type = type
+        self.score = score
+
+        type_options = ["multiple-choice", "technical",  "presentation"]
+        if type not in type_options:
+            raise ValueError("That isn't a valid assessment type!")
+        if score > 100:
+            raise ValueError("Score needs to be 100 or less!")
+        if score < 0:
+            raise ValueError("Score needs to be less than zero!")
+        
+
+class MultipleChoiceAssessment(Assessment):
+    def __init__(self, name: str, score: float):
+        super().__init__(name, score)
+    
+    def calculate_score(self):
+        score = (self.score * 0.7) / 100
+        return int(score)
+
+class TechnicalAssessment(Assessment):
+    def __init__(self, name: str, score: float):
+        super().__init__(name, score)
+
+    def calculate_score(self):
+        return int(self.score)
+
+
+class PresentationAssessment(Assessment):
+    def __init__(self, name: str, score: float):
+        super().__init__(name, score)
+    
+    def calculate_score(self):
+        score = (self.score * 0.6) / 100
+        return int(score)
+
 
 
 if __name__ == "__main__":
