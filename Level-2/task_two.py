@@ -18,7 +18,7 @@ class Trainee():
     def add_assessment(self, assessment: Assessment) -> None:
         '''Adds the assessment to our assessment list'''
         if not isinstance(assessment, Assessment):
-            raise ValueError("Please enter a valid assessment class!")
+            raise TypeError("Please enter a valid assessment class!")
         self.assessments.append(assessment)
 
     def get_assessment(self, name: str) -> Assessment:
@@ -26,6 +26,14 @@ class Trainee():
         for assessments in self.assessments:
             if assessments.name == name:
                 return assessments
+    
+    def get_assessment_of_type(self, type: str) -> list[Assessment]:
+        assesments_list = []
+        for assessments in self.assessments:
+            if type == assessments.type: 
+                assesments_list.append(type)
+            return assesments_list
+
 
 
 class Assessment:
@@ -35,9 +43,6 @@ class Assessment:
         self.type = type
         self.score = score
 
-        type_options = ["multiple-choice", "technical",  "presentation"]
-        if type not in type_options:
-            raise ValueError("That isn't a valid assessment type!")
         if score > 100:
             raise ValueError("Score needs to be 100 or less!")
         if score < 0:
@@ -46,27 +51,25 @@ class Assessment:
 
 class MultipleChoiceAssessment(Assessment):
     def __init__(self, name: str, score: float):
-        super().__init__(name, score)
+        super().__init__(name, "multiple-choice", score)
     
     def calculate_score(self):
-        score = (self.score * 0.7) / 100
-        return int(score)
+        return self.score * 0.7 
 
 class TechnicalAssessment(Assessment):
     def __init__(self, name: str, score: float):
-        super().__init__(name, score)
+        super().__init__(name, "technical", score)
 
     def calculate_score(self):
-        return int(self.score)
-
+        return self.score
 
 class PresentationAssessment(Assessment):
     def __init__(self, name: str, score: float):
-        super().__init__(name, score)
+        super().__init__(name, "presentation", score)
     
     def calculate_score(self):
-        score = (self.score * 0.6) / 100
-        return int(score)
+        return (self.score * 0.6) 
+        
 
 
 
