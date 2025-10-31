@@ -2,7 +2,6 @@ from datetime import date
 
 class Trainee():
     '''Trainee Class'''
-
     def __init__(self, name: str, email: str, date_of_birth: date):
         self.name = name
         self.email = email
@@ -28,12 +27,11 @@ class Trainee():
                 return assessments
     
     def get_assessment_of_type(self, type: str) -> list[Assessment]:
-        assesments_list = []
+        assessments_list = []
         for assessments in self.assessments:
             if type == assessments.type: 
-                assesments_list.append(type)
-            return assesments_list
-
+                assessments_list.append(assessments)
+        return assessments_list
 
 
 class Assessment:
@@ -43,6 +41,9 @@ class Assessment:
         self.type = type
         self.score = score
 
+        type_options = ["multiple-choice", "technical",  "presentation"]
+        if type not in type_options:
+            raise ValueError("That isn't a valid assessment type!")
         if score > 100:
             raise ValueError("Score needs to be 100 or less!")
         if score < 0:
@@ -70,9 +71,7 @@ class PresentationAssessment(Assessment):
     def calculate_score(self):
         return (self.score * 0.6) 
         
-
-
-
+        
 if __name__ == "__main__":
     trainee = Trainee("Sigma", "trainee@sigmalabs.co.uk", date(1990, 1, 1))
     print(trainee)
